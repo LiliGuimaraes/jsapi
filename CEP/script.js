@@ -1,3 +1,4 @@
+//pegando elemento #cep HTML
 const cep = document.getElementById("cep");
 
 //
