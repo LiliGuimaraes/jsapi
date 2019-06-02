@@ -12,7 +12,6 @@ const server = http.createServer((req, res) => {
     if (req.url == '/contato') {
         res.end('<h1>Contato<h1/>')
     } */
-
     // simplify the if structure, check the rote
     res.end(resp[req.url] || resp[''])
 })
