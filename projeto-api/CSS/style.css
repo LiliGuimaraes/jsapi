@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #3e2c3a;
+}
+
+h2 {
+    padding-bottom: 1rem;
+}
+
+p {
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+span {
+    font-size: 1.25rem;
+}
+
+section {
+    margin: 3rem 1.5rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.container img.logo {
+    width: auto;
+    height: 150px;
+    margin: 3rem auto;
+    display: block;
+}
+
+.container .feature-woman {
+    background: #f8f8f8;
+    border-radius: 8px;
+    padding: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 660px) {
+    .container .feature-woman {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.container .feature-woman img {
+    width: auto;
+    height: 280px;
+}
+
+@media screen and (max-width: 660px) {
+    .container .feature-woman img {
+        height: auto;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+.container .feature-woman .info {
+    padding: 0 0 1rem 1rem;
+}
+
+.container .feature-woman .info span {
+    font-size: .8rem;
+}
+
+.container .about {
+    text-align: center;
+}
+
+.container .how-to code {
+    background: #dddddd;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    display: block;
+}
+
+@media screen and (max-width: 660px) {
+    .container .how-to code {
+        font-size: 0.7rem;
+    }
+}
+
+footer p {
+    text-align: center;
+}

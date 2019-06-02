@@ -7,7 +7,7 @@ app.appendChild(container);
 //make GET request
 
 
-fetch('https://theblackwomanhistory.firebaseio.com/.json')
+fetch('https://theblackwomanhistory.firebaseio.com/28.json')
     .then((response) => {
         return response.json();
     })
@@ -17,41 +17,35 @@ fetch('https://theblackwomanhistory.firebaseio.com/.json')
 
         data.content.forEach(womans => {
 
-                const order = document.createElement('ul');
-                order.setAttribute('class', 'womans');
-                order.textContent = womans.order;
 
-                const title = document.createElement('h1');
-                title.setAttribute('class', 'womans');
-                title.textContent = womans.title;
+            const title = document.createElement('h1');
+            title.setAttribute('class', 'womans');
+            title.textContent = womans.title;
 
-                const description = document.createElement('p');
-                description.setAttribute('class', 'description');
-                description.textContent = womans.description;
+            const description = document.createElement('p');
+            description.setAttribute('class', 'description');
+            description.textContent = womans.description;
 
-                const birthdate = document.createElement('ul');
-                birthdate.setAttribute('class', 'birthdate');
-                birthdate.textContent = womans.birthdate;
+            const birthdate = document.createElement('p');
+            birthdate.setAttribute('class', 'birthdate');
+            birthdate.textContent = womans.birthdate;
 
-                const deathdate = document.createElement('ul');
-                deathdate.setAttribute('class', 'deathdate');
-                deathdate.textContent = womans.deathdate;
+            const deathdate = document.createElement('p');
+            deathdate.setAttribute('class', 'deathdate');
+            deathdate.textContent = womans.deathdate;
 
-                const country = document.createElement('ul');
-                country.setAttribute('class', 'country');
-                description.textContent = womans.country;
+            const country = document.createElement('p');
+            country.setAttribute('class', 'country');
+            description.textContent = womans.country;
 
-                document.querySelector('_photo').src = data.metadata.image.url;
 
-                app.appendChild(order)
-                app.appendChild(title)
-                app.appendChild(description)
-                app.appendChild(birthdate)
-                app.appendChild(deathdate)
-                app.appendChild(country)
+            app.appendChild(order)
+            app.appendChild(title)
+            app.appendChild(description)
+            app.appendChild(birthdate)
+            app.appendChild(deathdate)
+            app.appendChild(country)
 
-            })
-            .catch(err => {
-                console.log('Ocorreu algum erro', err)
-            })
+        })
+
     });
