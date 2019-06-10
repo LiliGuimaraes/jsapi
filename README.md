@@ -1,5 +1,5 @@
-# jsapi
-Consumindo dados dinâmicos com Fetch API
+#### jsapi
+Practicing API rest with various exercises and projects
 
 ## Entendendo sobre Rest , verbos e trabalhando com dados dinâmicos com Postman
 
